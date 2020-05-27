@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>.
+
+    <br>
+    <br>
+    <audio id="audio" controls></audio>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script>
+      const dir = location.hash.substring(1)
+      const dom_audio = document.getElementById('audio')
+      const filePath = dir + '/t-rex-roar.mp3'
+      console.log('Load file:', filePath)
+      dom_audio.src = filePath
+      dom_audio.play()
+    </script>
+  </body>
+</html>
