@@ -5,3 +5,5 @@
 
 
 The last working version: v8.3.0
+
+From <https://github.com/electron/electron/issues/23757#issuecomment-634829046>

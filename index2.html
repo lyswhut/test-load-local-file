@@ -18,7 +18,7 @@
     <script>
       const dir = location.hash.substring(1)
       const dom_audio = document.getElementById('audio')
-      const filePath = dir + '/t-rex-roar.mp3'
+      const filePath = 'file://' + dir + '/t-rex-roar.mp3'
       console.log('Load file:', filePath)
       dom_audio.src = filePath
       dom_audio.play()
